@@ -8,50 +8,50 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="answer">
+        <input class="answer" id="answerDisplay" type="text">
 
-        </div>
+        <input class="compute-text" id="writein" type="text">
 
-        <div class="compute-text">
-
-        </div>
+        
 
         <div class="btn-hold">
             <div class="row">
-                <button>C</button>
-                <button>+/-</button>
-                <button>%</button>
-                <button>/</button>
+                <button id="btn" value="">C</button>
+                <button id="btn" onclick="writeValue()" value="">+/-</button>
+                <button id="btn" onclick="writeValue('%')" value="%">%</button>
+                <button id="btn" onclick="writeValue('/')" value="/">/</button>
             </div>
 
             <div class="row">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>+</button>
+                <button id="btn" onclick="writeValue('7')" value="7">7</button>
+                <button id="btn" onclick="writeValue('8')" value="8">8</button>
+                <button id="btn" onclick="writeValue('9')" value="9">9</button>
+                <button id="btn" onclick="writeValue('+')" value="+">+</button>
             </div>
 
             <div class="row">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>X</button>
+                <button id="btn" onclick="writeValue(4)" value="4">4</button>
+                <button id="btn" onclick="writeValue(5)" value="5">5</button>
+                <button id="btn" onclick="writeValue(6)" value="6">6</button>
+                <button id="btn" onclick="writeValue('*')" value="*">X</button>
             </div>
 
             <div class="row">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>-</button>
+                <button id="btn" onclick="writeValue(1)" value="1">1</button>
+                <button id="btn" onclick="writeValue(2)" value="2">2</button>
+                <button id="btn" onclick="writeValue(3)" value="3">3</button>
+                <button id="btn" onclick="writeValue('-')" value="-">-</button>
             </div>
 
             <div class="row">
-                <button>0</button>
-                <button>.</button>
+                <button id="btn" value="0">0</button>
+                <button id="btn" onclick="writeValue('.')" value=".">.</button>
                 <button>DEL</button>
-                <button>=</button>
+                <button onclick="EvaluteA()">=</button>
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
