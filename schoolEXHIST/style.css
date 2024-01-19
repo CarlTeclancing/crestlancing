@@ -21,3 +21,22 @@ body{
     height: 60px;
     border: 1px solid rgb(162, 162, 255);
 }
+.btn-hold{
+    height: 380px;
+    width: 100%;
+}
+.row{
+    height: 76px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(162, 162, 255);
+    color:black;
+}
