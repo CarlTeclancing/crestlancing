@@ -2,8 +2,6 @@
 
 
 function writeValue(param){
-    var btn = document.getElementById("btn")
-
     var writein = document.getElementById('writein')
 
     var newValue = writein.value + param
