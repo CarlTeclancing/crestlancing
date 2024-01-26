@@ -7,15 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>LOGO</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Courses</a>
-            <a href="#">Contact</a>
+    <div class="header">
+        <header>
+            <h1>LOGO</h1>
+            <nav class="nav-l">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Courses</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button class="btn-l">Sign In</button>
+            <i class="bi bi-list" onclick="openMenu()"></i>
+        </header>
+        <nav class="nav-s" id="nav-s">
+            <nav class="main">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Courses</a>
+                <a href="#">Contact</a>
+                <button class="btn-s">Sign In</button>
+            </nav>
+
         </nav>
-        <button>Sign In</button>
-    </header>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

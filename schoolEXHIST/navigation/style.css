@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 body{
     background-color:white;
     margin: 0;
@@ -5,8 +6,17 @@ body{
     display: flex;
     align-items: center;
 }
-header{
+.header{
     width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(13, 13, 60);
+}
+header{
+    width: 90%;
     height: 60px;
     padding-top: 0px;
     background-color: rgb(13, 13, 60);
@@ -31,8 +41,66 @@ a{
     color: white;
 }
 
+
 a:hover{
     text-decoration: none;
     font-size: 16px;
     color: rgb(0, 102, 255);
 }
+.bi{
+    display: none;
+}
+.nav-s{
+    display: none;
+}
+.btn-s{
+    display: none;
+}
+@media only screen and (max-width: 770px) {
+    body {
+      background-color: lightblue;
+    }
+    .nav-l{
+        display: none;
+    }
+    .nav-s{
+        display: block;
+        position: absolute;
+        width: 0%;
+        height: 0vh;
+        overflow: hidden;
+        top: 60px;
+        left: 0;
+        background-color: rgba(13, 13, 60, 0.574);
+        font-size: 24px;
+        color: white;
+        display: flex;
+        
+        
+        flex-direction: column;
+
+    }
+
+    .btn-l{
+        display: none;
+    }
+    .bi{
+        display: inline;
+        font-size: 24px;
+    }
+    .btn-s{
+        display: inline;
+    }
+    .main{
+        width: 100%;
+        height: 50%;
+        font-size: 32px;
+        font-weight: bolder;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+  }
